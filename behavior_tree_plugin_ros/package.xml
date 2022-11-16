@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>behavior_tree_plugin_ros</name>
+  <version>0.1.0</version>
+  <description>The BT plugin that calls any ROS Service or Action</description>
+
+
+  <maintainer email="Mahmoud@Farshbaf.Net">Mahmoud FArshbaf</maintainer>
+
+  <license>MIT</license>
+
+
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/myworkcell_behavior</url> -->
+
+  <author email="Mahmoud@Farshbaf.Net">Mahmoud Farshbaf</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>message_generation</exec_depend>
+
+  <depend>behaviortree_cpp_v3</depend>
+  <depend>std_msgs</depend>
+  <depend>actionlib_msgs</depend>
+  <depend>actionlib</depend>
+  <depend>message_serialization</depend>
+  <depend>ros_babel_fish</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>
