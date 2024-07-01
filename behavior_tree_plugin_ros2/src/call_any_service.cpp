@@ -1,8 +1,8 @@
-#include "behavior_tree_plugin_ros/call_any_service.h"
+#include "behavior_tree_plugin_ros2/call_any_service.h"
 #include "rclcpp/rclcpp.hpp"
 #include "ros2_babel_fish/babel_fish.hpp"
 
-namespace behavior_tree_plugin_ros
+namespace behavior_tree_plugin_ros2
 {
 CallAnyService::CallAnyService(const std::string& name, const BT::NodeConfiguration& config, std::string service_type)
   : BT::SyncActionNode(name, config), service_type_(service_type)
